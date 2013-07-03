@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="org.toilelibre.libe.remoteaudio"
+      android:versionCode="6"
+      android:versionName="0.30">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application android:icon="@drawable/icon" android:label="@string/appname" debuggable="TRUE">
+        <activity android:name=".RemoteActivity"
+                  android:label="@string/appname">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".test.AudioTest"
+                  android:label="@string/appname">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".config.ConfigCommandActivity"
+                  android:label="@string/appname_configcommand">
+        </activity>
+        <activity android:name=".config.ConfigSourceActivity"
+                  android:label="@string/appname_configstream">
+        </activity>
+        <activity android:name=".config.ConfigStreamingActivity"
+                  android:label="@string/appname_configplayback">
+        </activity>
+
+        <service android:name=".process.ProcessBusinessService"/>        
+    </application>
+        <service android:name=".controler.ListenStreamService"/>
+        <service android:name=".controler.ListenUnixCommandService"/>
+    <uses-sdk android:minSdkVersion="3" />
+
+
+</manifest> 

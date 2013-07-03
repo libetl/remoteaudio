@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/musicbg">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<LinearLayout android:id="@+id/configpanel"
+			android:orientation="vertical" android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textSize="30sp"
+				android:text="@string/appname" />
+
+			<LinearLayout android:orientation="vertical"
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<TextView android:text="@string/bufLength"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				<LinearLayout android:orientation="horizontal"
+					android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<SeekBar android:id="@+id/barBufLength" android:layout_weight="1"
+						android:layout_width="fill_parent" android:layout_height="wrap_content" />
+					<TextView android:id="@+id/bufLengthValue" android:layout_weight="3"
+					android:layout_width="fill_parent" android:layout_height="wrap_content" />
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout android:orientation="vertical"
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<TextView android:text="@string/samplerate"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			    <Spinner android:id="@+id/editSamplerate"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:width="200dip" />
+			</LinearLayout>
+
+			<LinearLayout android:orientation="vertical"
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<TextView android:text="@string/channelConfig"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				<Spinner android:id="@+id/editChannelConfig"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:width="200dip" />
+			</LinearLayout>
+
+			<LinearLayout android:orientation="vertical"
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<TextView android:text="@string/encoding"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				<Spinner android:id="@+id/editEncoding"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:width="200dip" />
+			</LinearLayout>
+
+			<LinearLayout android:orientation="vertical"
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<TextView android:text="@string/sampleFormat"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				<Spinner android:id="@+id/editSampleFormat"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:width="200dip" />
+			</LinearLayout>
+			
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<Button android:id="@+id/backbutton" android:text="@string/backbutton"
+					android:layout_weight="1" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" />
+				<Button android:id="@+id/okbutton" android:text="@string/okbutton"
+					android:layout_weight="1" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

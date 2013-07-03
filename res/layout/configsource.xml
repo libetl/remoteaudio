@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/musicbg">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<LinearLayout android:id="@+id/configpanel"
+			android:orientation="vertical" android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textSize="30sp"
+				android:text="@string/appname" />
+			<LinearLayout android:orientation="vertical"
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<TextView android:text="@string/host" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<EditText android:id="@+id/editHost" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:width="200dip" />
+			</LinearLayout>
+			<LinearLayout android:orientation="vertical"
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<TextView android:text="@string/sshuser"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				<EditText android:id="@+id/editSshUser" android:width="200dip"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			</LinearLayout>
+			<LinearLayout android:orientation="vertical"
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<TextView android:text="@string/sshpassword"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				<EditText android:id="@+id/editSshPassword" 
+				    android:width="200dip" android:inputType="textPassword"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			</LinearLayout>
+			<LinearLayout android:orientation="vertical"
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<TextView android:text="@string/sndfile"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				<EditText android:id="@+id/editSndFile" android:width="200dip"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			</LinearLayout>
+			<LinearLayout android:orientation="vertical"
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<TextView android:text="@string/urlPath"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				<EditText android:id="@+id/editUrlPath" android:width="200dip"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<Button android:id="@+id/backbutton" android:text="@string/backbutton"
+					android:layout_weight="1" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" />
+				<Button android:id="@+id/okbutton" android:text="@string/okbutton"
+					android:layout_weight="1" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

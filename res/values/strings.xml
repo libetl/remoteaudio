@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Streaming</string>
+    <string name="appname">Remote Audio</string>
+    
+    
+    <string name="appname_configcommand">Remote Audio &gt; Command to execute</string>
+    <string name="appname_configstream">Remote Audio &gt; Source options</string>
+    <string name="appname_configplayback">Remote Audio &gt; Streaming options</string>
+    
+    
+    <string name="commandoptions">Command to execute : </string>
+    <string name="sourceoptions">Source options : </string>
+    <string name="streamingoptions">Streaming options : </string>
+    
+    <string name="host">Host :</string>
+    <string name="sshuser">Ssh user allowed (ssh only) :</string>
+    <string name="sshpassword">Ssh password (ssh only) :</string>
+    <string name="sndfile">PCM Sound file (ssh only) :</string>
+    <string name="urlPath">Path of the media on the web server (wget only) :</string>
+    
+    
+    <string name="bufLength">Buffer length (the higher the more reliable) :</string>
+    <string name="samplerate">Sample rate in Hertz :</string>
+    <string name="channelConfig">Is the source mono or stereo ? :</string>
+    <string name="encoding">Encoding type :</string>
+    <string name="sampleFormat">Sample format :</string>
+    
+    <string name="configurebutton">Configure</string>
+    <string name="backbutton">&lt;- Back</string>
+    <string name="okbutton">ok</string>
+    <string name="playpause">Play / Pause</string>
+</resources>

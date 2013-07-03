@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/musicbg">
+	<LinearLayout android:id="@+id/configpanel"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textSize="30sp"
+			android:text="@string/appname" />
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="@string/commandoptions"
+				android:layout_weight="1" />
+			<Button android:id="@+id/configcommandbutton" android:text="@string/configurebutton"
+				android:layout_weight="1" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="@string/sourceoptions"
+				android:layout_weight="1" />
+			<Button android:id="@+id/configstreambutton" android:text="@string/configurebutton"
+				android:layout_weight="1" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="@string/streamingoptions"
+				android:layout_weight="1" />
+			<Button android:id="@+id/configplaybackbutton" android:text="@string/configurebutton"
+				android:layout_weight="1" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:id="@+id/buttons" android:layout_below="@+id/configpanel"
+		android:layout_marginTop="-50dip" android:numColumns="2">
+		<Button android:id="@+id/playpause" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="@string/playpause"
+			android:layout_weight="3" />
+		<ProgressBar android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:id="@+id/stream"
+			android:indeterminateOnly="false" android:progressDrawable="@android:drawable/progress_horizontal"
+			android:indeterminateDrawable="@android:drawable/progress_indeterminate_horizontal"
+			android:layout_weight="1" />
+	</LinearLayout>
+</LinearLayout>

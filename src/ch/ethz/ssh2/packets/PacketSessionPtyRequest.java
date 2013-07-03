@@ -1,0 +1,53 @@
+package ch.ethz.ssh2.packets;
+
+/**
+ * PacketSessionPtyRequest.
+ * 
+ * @author Christian Plattner, plattner@inf.ethz.ch
+ * @version $Id: PacketSessionPtyRequest.java,v 1.2 2005/08/24 17:54:09 cplattne
+ *          Exp $
+ */
+public class PacketSessionPtyRequest {
+    byte []        payload;
+
+    public int     recipientChannelID;
+    public boolean wantReply;
+    public String  term;
+    public int     character_width;
+    public int     character_height;
+    public int     pixel_width;
+    public int     pixel_height;
+    public byte [] terminal_modes;
+
+    public PacketSessionPtyRequest (int recipientChannelID, boolean wantReply,
+            String term, int character_width, int character_height,
+            int pixel_width, int pixel_height, byte [] terminal_modes) {
+        this.recipientChannelID = recipientChannelID;
+        this.wantReply = wantReply;
+        this.term = term;
+        this.character_width = character_width;
+        this.character_height = character_height;
+        this.pixel_width = pixel_width;
+        this.pixel_height = pixel_height;
+        this.terminal_modes = terminal_modes;
+    }
+
+    public byte [] getPayload () {
+        if (this.payload == null) {
+            TypesWriter tw = new TypesWriter ();
+            tw.writeByte (Packets.SSH_MSG_CHANNEL_REQUEST);
+            tw.writeUINT32 (this.recipientChannelID);
+            tw.writeString ("pty-req");
+            tw.writeBoolean (this.wantReply);
+            tw.writeString (this.term);
+            tw.writeUINT32 (this.character_width);
+            tw.writeUINT32 (this.character_height);
+            tw.writeUINT32 (this.pixel_width);
+            tw.writeUINT32 (this.pixel_height);
+            tw.writeString (this.terminal_modes, 0, this.terminal_modes.length);
+
+            this.payload = tw.getBytes ();
+        }
+        return this.payload;
+    }
+}

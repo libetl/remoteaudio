@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?fileVersion 4.0.0?>
+
+<cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="org.eclipse.cdt.core.default.config.645606075">
+			<storageModule buildSystemId="org.eclipse.cdt.core.defaultConfigDataProvider" id="org.eclipse.cdt.core.default.config.645606075" moduleId="org.eclipse.cdt.core.settings" name="Configuration">
+				<externalSettings/>
+				<extensions/>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets">
+				<buildTargets/>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.pathentry">
+				<pathentry kind="src" path=""/>
+				<pathentry include="/home/lionel/Public/android/system/core/include" kind="inc" path="jni/MP3Decoder.cpp" system="true"/>
+				<pathentry include="/usr/lib/jvm/java-5-sun/include/linux" kind="inc" path="jni/MP3Decoder.cpp" system="true"/>
+				<pathentry include="/usr/lib/jvm/java-5-sun/include" kind="inc" path="jni/MP3Decoder.cpp" system="true"/>
+				<pathentry include="/usr/include" kind="inc" path="jni/MP3Decoder.cpp" system="true"/>
+				<pathentry kind="out" path=""/>
+			</storageModule>
+		</cconfiguration>
+	</storageModule>
+</cproject>
